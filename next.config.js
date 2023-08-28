@@ -20,6 +20,18 @@ module.exports = {
     return config
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')]
+    /// Global mixins&variables
+    additionalData: [
+      'src/styles/config/variables',
+      'src/styles/config/breakpoints',
+      'src/styles/config/mixins'
+    ]
+      .map((p) => `@import '${p}';`)
+      .join(''),
+    /// import paths lookup for easy access to styles&assets
+    includePaths: [
+      path.join(__dirname, 'styles'),
+      path.join(__dirname, 'assets')
+    ]
   }
 }

@@ -1,0 +1,26 @@
+@mixin flexBase {
+  display: flex;
+  align-items: center;
+}
+
+@mixin widthBase {
+  max-width: 100%;
+  width: 100%;
+}
+
+@mixin desktopPadding {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
