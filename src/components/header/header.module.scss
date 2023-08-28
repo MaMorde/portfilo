@@ -63,6 +63,12 @@
     padding: 11px 16px;
     width: 100%;
     text-align: center;
+
+    &:hover {
+      &::after {
+        width: 0%;
+      }
+    }
   }
 
   .buttonGit {
