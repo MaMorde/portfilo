@@ -1,11 +1,6 @@
 import React from 'react'
 import styles from './stars.module.scss'
-
-import dynamic from 'next/dynamic'
-
-const Particles = dynamic(() => import('react-tsparticles'), {
-  ssr: false
-})
+import Particles from 'react-tsparticles'
 
 const Stars = () => {
   return (
