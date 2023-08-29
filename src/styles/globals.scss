@@ -6,6 +6,7 @@ html {
 
 html,
 body {
+  color: white;
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
@@ -13,10 +14,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-
-button {
-  font-family: Roboto;
 }
 
 #__next {

@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './main_banner.module.scss'
 import Typewriter from 'typewriter-effect'
-import HomeLogo from 'public/home-main.svg'
 import cn from 'classnames'
 import Image from 'next/image'
+
 const MainBanner = () => {
   return (
     <section className={styles.root}>

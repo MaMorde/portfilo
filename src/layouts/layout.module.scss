@@ -5,12 +5,9 @@
   position: relative;
 }
 
-.contentWrapper {
+.content {
   flex: 1 0 auto;
   word-break: break-all;
-}
-
-.content {
   position: relative;
   z-index: 1;
 }

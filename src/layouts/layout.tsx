@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import styles from './layout.module.scss'
 import Header from '~/components/header/header'
@@ -9,9 +9,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={styles.main}>
       <Header />
-      <div className={styles.contentWrapper}>
+      <div className={styles.content}>
         <Stars />
-        <div className={styles.content}>{children}</div>
+        {children}
       </div>
       <Footer />
     </div>
