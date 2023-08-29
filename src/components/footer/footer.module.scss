@@ -1,13 +1,15 @@
 .root {
+  background-color: rgb(10, 4, 22);
+}
+
+.wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 64px;
   align-items: center;
-  background-color: rgb(10, 4, 22);
   padding-top: 16px;
   padding-bottom: 16px;
   z-index: 10;
-  margin: 0;
 
   @media screen and (max-width: 781px) {
     flex-direction: column;
