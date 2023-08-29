@@ -10,32 +10,28 @@ const MySelf = () => (
       </div>
       <div className={styles.description}>
         <p>
-          Hi Everyone, I am{' '}
-          <span className={styles.purple}>Emil Karamanov</span> from{' '}
-          <span className={styles.purple}>Rostov-on-Done, Russia.</span>
+          Hi Everyone, I am <i className={styles.purple}>Emil Karamanov</i> from{' '}
+          <i className={styles.purple}>Rostov-on-Done, Russia.</i>
         </p>
         <p>
           I graduated from{' '}
-          <span className={styles.purple}>
-            Don State Technical University (DSTU)
-          </span>{' '}
+          <i className={styles.purple}>Don State Technical University (DSTU)</i>{' '}
           with a{' '}
-          <span className={styles.purple}>
+          <i className={styles.purple}>
             major in Applied Informatics in Economics.
-          </span>
+          </i>
         </p>
         <p>
-          I am a passionate{' '}
-          <span className={styles.purple}>Frontend Developer</span> specializing
-          in creating captivating web experiences using the power of{' '}
-          <span className={styles.purple}>React and Next.js.</span>
+          I am a passionate <i className={styles.purple}>Frontend Developer</i>{' '}
+          specializing in creating captivating web experiences using the power
+          of <i className={styles.purple}>React and Next.js.</i>
         </p>
         <p>
           With a keen eye for design aesthetics and a drive for delivering{' '}
-          <span className={styles.purple}>top-notch user interfaces</span>, I
-          strive to bring ideas to life through{' '}
-          <span className={styles.purple}>elegant code and</span>{' '}
-          <span className={styles.purple}>thoughtful interactions.</span>
+          <i className={styles.purple}>top-notch user interfaces</i>, I strive
+          to bring ideas to life through{' '}
+          <i className={styles.purple}>elegant code and</i>{' '}
+          <i className={styles.purple}>thoughtful interactions.</i>
         </p>
       </div>
     </div>
