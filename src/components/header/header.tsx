@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import styles from './header.module.scss'
-import Link from 'next/link'
 import cn from 'classnames'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { Link as ScrollLink } from 'react-scroll'
