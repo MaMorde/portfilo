@@ -5,11 +5,11 @@ import type { AppProps } from 'next/app'
 import Preloader from '~/components/preloader/preloader'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  const [load, upadateLoad] = useState(true)
+  const [load, setLoad] = useState(true)
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false)
+      setLoad(false)
     }, 1200)
 
     return () => clearTimeout(timer)

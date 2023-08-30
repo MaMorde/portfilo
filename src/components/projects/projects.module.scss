@@ -1,0 +1,36 @@
+.root {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.purple {
+  color: #c95bf5;
+}
+
+.title {
+  font-size: 40px;
+  word-break: keep-all;
+  text-align: center;
+
+  @include tablet {
+    font-size: 36px;
+  }
+
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.projects {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
