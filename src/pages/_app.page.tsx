@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 import type { AppProps } from 'next/app'
 import Preloader from '~/components/preloader/preloader'
+import { NextSeo } from 'next-seo'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [load, setLoad] = useState(true)
@@ -17,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+      <NextSeo title="Karamanov's Portfolio" />
       <Preloader load={load} />
       <Component {...pageProps} />
     </>

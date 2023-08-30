@@ -3,7 +3,7 @@ import styles from './my_self.module.scss'
 import cn from 'classnames'
 
 const MySelf = () => (
-  <section className={cn(styles.root, 'container')}>
+  <section id="myself" className={cn(styles.root, 'container')}>
     <div className={styles.text}>
       <div className={styles.title}>
         LET ME <span className={styles.purple}>INTRODUCE</span> MYSELF

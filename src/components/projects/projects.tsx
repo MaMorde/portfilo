@@ -43,7 +43,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className={styles.root}>
+    <section id="projects" className={styles.root}>
       <div className={cn(styles.wrapper, 'container')}>
         <div className={styles.title}>
           <span className={styles.purple}>Projects</span> I Worked On

@@ -3,6 +3,7 @@ import styles from './header.module.scss'
 import Link from 'next/link'
 import cn from 'classnames'
 import { AiOutlineGithub } from 'react-icons/ai'
+import { Link as ScrollLink } from 'react-scroll'
 
 const Header = () => {
   const [expand, setExpand] = useState(false)
@@ -41,9 +42,9 @@ const Header = () => {
         [styles.navColored]: navColored
       })}
     >
-      <Link className={styles.logo} href="/">
+      <ScrollLink className={styles.logo} to="/">
         EK.
-      </Link>
+      </ScrollLink>
       <nav className={styles.nav}>
         <div
           className={cn(styles.burger, expand && styles.expanded)}
@@ -60,21 +61,38 @@ const Header = () => {
             'container'
           )}
         >
-          <Link className={styles.link} href="/">
-            Home
-          </Link>
-
-          <Link className={styles.link} href="/about">
+          <ScrollLink
+            className={styles.link}
+            to="myself"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            onClick={toggleExpand}
+          >
             About
-          </Link>
+          </ScrollLink>
 
-          <Link className={styles.link} href="/projects">
+          <ScrollLink
+            className={styles.link}
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            onClick={toggleExpand}
+          >
             Projects
-          </Link>
+          </ScrollLink>
 
-          <Link className={styles.link} href="/resume">
+          <ScrollLink
+            className={styles.link}
+            to="resume"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            onClick={toggleExpand}
+          >
             Resume
-          </Link>
+          </ScrollLink>
           <a
             className={styles.buttonGit}
             role="button"
@@ -86,21 +104,35 @@ const Header = () => {
           </a>
         </div>
         <div className={styles.desktopMenu}>
-          <Link className={styles.link} href="/">
-            Home
-          </Link>
-
-          <Link className={styles.link} href="/about">
+          <ScrollLink
+            className={styles.link}
+            to="myself"
+            smooth={true}
+            duration={500}
+            offset={-80}
+          >
             About
-          </Link>
+          </ScrollLink>
 
-          <Link className={styles.link} href="/projects">
+          <ScrollLink
+            className={styles.link}
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-80}
+          >
             Projects
-          </Link>
+          </ScrollLink>
 
-          <Link className={styles.link} href="/resume">
+          <ScrollLink
+            className={styles.link}
+            to="resume"
+            smooth={true}
+            duration={500}
+            offset={-80}
+          >
             Resume
-          </Link>
+          </ScrollLink>
           <a
             className={styles.buttonGit}
             role="button"
